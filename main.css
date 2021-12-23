@@ -1,0 +1,38 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(36, 127, 139, 0.678);
+}
+body {
+  background-image: url(./assetsAPI/ColorfulLetterBackground.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  background-color: rgb(253, 241, 224);
+  text-align: center;
+  border-radius: 4px;
+  border: solid 1px darkgrey;
+  padding: 7em 3em 8em 3em;
+}
+h1 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: larger;
+}
+
+input {
+  border: darkgrey;
+  border-radius: 4px;
+}
+
+button {
+  border: darkgrey;
+  border-radius: 4px;
+}

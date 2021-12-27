@@ -10,14 +10,30 @@ body {
 }
 
 main {
-  background-color: rgb(253, 241, 224);
+  background-color: rgba(251, 251, 239, 0.972);
   text-align: center;
   border-radius: 4px;
-  border: solid 1px darkgrey;
-  padding: 7em 3em 8em 3em;
+  border: solid 1px black;
+  padding: 3.5em 3em 8em 3em;
+  min-height: 100vh;
+  margin: 0;
+  box-shadow: 2px 2px 15px rgb(139, 136, 133);
 }
+
+header {
+  border: solid 1px black;
+  margin-top: 0;
+  margin-left: -2em;
+  padding: 1em 2em 2em 2em;
+  width: 100%;
+  background-color: rgb(0, 130, 139);
+  border-radius: 4px;
+}
+
 h1 {
   margin-top: 0;
+  padding: 0.75rem 0;
+  color: rgb(251, 251, 239);
 }
 
 ul {
@@ -30,9 +46,28 @@ li {
 input {
   border: darkgrey;
   border-radius: 4px;
+  height: 30px;
+  width: 200px;
 }
 
 button {
-  border: darkgrey;
+  border: rgba(137, 248, 248, 0.575);
+  color: rgb(0, 130, 139);
+  background-color: rgb(242, 255, 254);
   border-radius: 4px;
+  height: 30px;
+  width: 90;
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(137, 248, 248, 0.575);
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+h3 {
+  padding: 2em;
+}
+#name-country-info li {
+  margin: 1em;
 }

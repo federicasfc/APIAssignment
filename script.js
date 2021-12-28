@@ -78,10 +78,23 @@ function displayNameCountryData(countryInfo) {
     let nameCountryTwo = document.createElement("li");
     let nameCountryThree = document.createElement("li");
 
+
+//If statement: 
+//Note: If statement became necessary because data would not display when the array would only go up to an index of 0 or 1. So, in the case of names that were only prevalent in one country, none of the data would display. 
+    if (countryInfo.country.length == 3) {
+
+        nameCountryOne.innerText = countryInfo.country[0].country_id; 
+        nameCountryTwo.innerText = countryInfo.country[1].country_id; //Think that it gets mad when there isn't a value at the indexes it's calling// Need fixed- to exemplify, try rebuscado name
+        nameCountryThree.innerText = countryInfo.country[2].country_id;
+
+    } else if (countryInfo.country.length == 2) {
+
+        nameCountryOne.innerText = countryInfo.country[0].country_id; 
+        nameCountryTwo.innerText = countryInfo.country[1].country_id; 
+    } else {
+        nameCountryOne.innerText = countryInfo.country[0].country_id;
+    }
     
-    nameCountryOne.innerText = countryInfo.country[0].country_id; 
-    nameCountryTwo.innerText = countryInfo.country[1].country_id; //Think that it gets mad when there isn't a value at the indexes it's calling// Need fixed- to exemplify, try rebuscado name
-    nameCountryThree.innerText = countryInfo.country[2].country_id;
 
     
     nameCountryOne.classList.add("name-country-one");

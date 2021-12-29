@@ -17,7 +17,7 @@ main {
   padding: 3.5em 3em 8em 3em;
   min-height: 100vh;
   margin: 0;
-  box-shadow: 2px 2px 15px rgb(139, 136, 133);
+  box-shadow: 4px 4px 10px rgb(102, 100, 99);
 }
 
 header {
